@@ -1,0 +1,6 @@
+﻿namespace $safeprojectname$
+{
+    interface IActiveWeaponState
+    {
+    }
+}

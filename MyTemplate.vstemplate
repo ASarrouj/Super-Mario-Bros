@@ -1,0 +1,484 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>MarioGame</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MarioGame</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MarioGame.csproj" File="MarioGame.csproj" ReplaceParameters="true">
+      <Folder Name="Block" TargetFolderName="Block">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Block.cs">Block.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlockState.cs">BlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BrickBlockState.cs">BrickBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BrokenBlockState.cs">BrokenBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CastleBrickBlockState.cs">CastleBrickBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrackedBlockState.cs">CrackedBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HiddenBlockState.cs">HiddenBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IBlockState.cs">IBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemBlockState.cs">ItemBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PipeBlockState.cs">PipeBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StoneBlockState.cs">StoneBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UndergroundBrickBlockState.cs">UndergroundBrickBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UndergroundCrackedBlockState.cs">UndergroundCrackedBlockState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UsedBlockState.cs">UsedBlockState.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Camera" TargetFolderName="Camera">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICamera.cs">ICamera.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerCamera.cs">PlayerCamera.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Collision" TargetFolderName="Collision">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyBlockCollisionDetector.cs">EnemyBlockCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyBlockCollisionHandler.cs">EnemyBlockCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyBridgeCollisionDetector.cs">EnemyBridgeCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyEnemyCollisionDetector.cs">EnemyEnemyCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyEnemyCollisionHandler.cs">EnemyEnemyCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyFireballCollisionDetector.cs">EnemyFireballCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyPipeCollisionDetector.cs">EnemyPipeCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyPipeCollisionHandler.cs">EnemyPipeCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemyWeaponCollisionHandler.cs">EnemyWeaponCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICollidable.cs">ICollidable.cs</ProjectItem>
+        <Folder Name="ICollision" TargetFolderName="ICollision">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BottomCollision.cs">BottomCollision.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ICollision.cs">ICollision.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftCollision.cs">LeftCollision.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="NoCollision.cs">NoCollision.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightCollision.cs">RightCollision.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TopCollision.cs">TopCollision.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemBlockCollisionDetector.cs">ItemBlockCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemBlockCollisionHandler.cs">ItemBlockCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemPipeCollisionDetector.cs">ItemPipeCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemPipeCollisionHandler.cs">ItemPipeCollisionHandler.cs</ProjectItem>
+        <Folder Name="PlayerCollisionLogic" TargetFolderName="PlayerCollisionLogic">
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerBlockCollisionDetector.cs">PlayerBlockCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerBlockCollisionHandler.cs">PlayerBlockCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerBridgeCollisionDetector.cs">PlayerBridgeCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerBridgeCollisionHandler.cs">PlayerBridgeCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerEnemyCollisionDetector.cs">PlayerEnemyCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerEnemyCollisionHandler.cs">PlayerEnemyCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerFlagpoleCollisionDetector.cs.cs">PlayerFlagpoleCollisionDetector.cs.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerFlagpoleCollisionHandler.cs">PlayerFlagpoleCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerHazardCollisionDetector.cs">PlayerHazardCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerHazardCollisionHandler.cs">PlayerHazardCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerItemCollisionDetector.cs">PlayerItemCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerItemCollisionHandler.cs">PlayerItemCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerPipeCollisionDetector.cs">PlayerPipeCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerPipeCollisionHandler.cs">PlayerPipeCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerPlatformCollisionDetector.cs">PlayerPlatformCollisionDetector.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerPlatformCollisionHandler.cs">PlayerPlatformCollisionHandler.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerProjectileCollisionDetector.cs">PlayerProjectileCollisionDetector.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeaponBlockCollisionDetector.cs">WeaponBlockCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeaponBlockCollisionHandler.cs">WeaponBlockCollisionHandler.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeaponPipeCollisionDetector.cs">WeaponPipeCollisionDetector.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeaponPipeCollisionHandler.cs">WeaponPipeCollisionHandler.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Commands" TargetFolderName="Commands">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BackCommand.cs">BackCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DownCursorCommand.cs">DownCursorCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GamepadOnCommand.cs">GamepadOnCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICommand.cs">ICommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KeyboardOnCommand.cs">KeyboardOnCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PauseCommand.cs">PauseCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerDownCommand.cs">PlayerDownCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerIdleCommand.cs">PlayerIdleCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerJumpCommand.cs">PlayerJumpCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerMoveLeftCommand.cs">PlayerMoveLeftCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerMoveRightCommand.cs">PlayerMoveRightCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerSprintCommand.cs">PlayerSprintCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerUseWeaponCommand.cs">PlayerUseWeaponCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuitCommand.cs">QuitCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResetGameCommand.cs">ResetGameCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SelectCommand.cs">SelectCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UpCursorCommand.cs">UpCursorCommand.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Content" TargetFolderName="Content">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConstantValues.cs">ConstantValues.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Content.mgcb">Content.mgcb</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="level1-4.csv">level1-4.csv</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="level1.csv">level1.csv</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="level1u.csv">level1u.csv</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="titleLevel.csv">titleLevel.csv</ProjectItem>
+      </Folder>
+      <Folder Name="Controls" TargetFolderName="Controls">
+        <Folder Name="ButtonChecker" TargetFolderName="ButtonChecker">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IButtonChecker.cs">IButtonChecker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MultipleButtonUpChecker.cs">MultipleButtonUpChecker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SingleButtonDownChecker.cs">SingleButtonDownChecker.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommandRegister.cs">CommandRegister.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GamepadController.cs">GamepadController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IController.cs">IController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KeyboardController.cs">KeyboardController.cs</ProjectItem>
+        <Folder Name="KeyChecker" TargetFolderName="KeyChecker">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IKeyChecker.cs">IKeyChecker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MultipleKeyDownChecker.cs">MultipleKeyDownChecker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MultipleKeyUpChecker.cs">MultipleKeyUpChecker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SingleKeyDownChecker.cs">SingleKeyDownChecker.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="EndObjects" TargetFolderName="EndObjects">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Axe.cs">Axe.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Bridge.cs">Bridge.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Castle.cs">Castle.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EndObject.cs">EndObject.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEndObjectsState.cs">IEndObjectsState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StaticEndObject.cs">StaticEndObject.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Toad.cs">Toad.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Enemies" TargetFolderName="Enemies">
+        <Folder Name="Bowser" TargetFolderName="Bowser">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Bowser.cs">Bowser.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="BowserState.cs">BowserState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingBowserState.cs">LeftMovingBowserState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingBowserState.cs">RightMovingBowserState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StandingStillBowserState.cs">StandingStillBowserState.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Goomba" TargetFolderName="Goomba">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DeadGoombaState.cs">DeadGoombaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FlippedGoombaState.cs">FlippedGoombaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Goomba.cs">Goomba.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GoombaState.cs">GoombaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingGoombaState.cs">LeftMovingGoombaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingGoombaState.cs">RightMovingGoombaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StompedGoombaState.cs">StompedGoombaState.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEnemy.cs">IEnemy.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEnemyState.cs">IEnemyState.cs</ProjectItem>
+        <Folder Name="Koopa" TargetFolderName="Koopa">
+          <ProjectItem ReplaceParameters="true" TargetFileName="FlippedGreenKoopaState.cs">FlippedGreenKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FlippedRedKoopaState.cs">FlippedRedKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Koopa.cs">Koopa.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="KoopaState.cs">KoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftBouncingKoopaState.cs">LeftBouncingKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftFlyingKoopaState.cs">LeftFlyingKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingGreenKoopaShellState.cs">LeftMovingGreenKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingRedKoopaShellState.cs">LeftMovingRedKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftWalkingGreenKoopaState.cs">LeftWalkingGreenKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftWalkingRedKoopaState.cs">LeftWalkingRedKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightBouncingKoopaState.cs">RightBouncingKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightFlyingKoopaState.cs">RightFlyingKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingGreenKoopaShellState.cs">RightMovingGreenKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingRedKoopaShellState.cs">RightMovingRedKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightWalkingGreenKoopaState.cs">RightWalkingGreenKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightWalkingRedKoopaState.cs">RightWalkingRedKoopaState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticGreenKoopaShellState.cs">StaticGreenKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticRedKoopaShellState.cs">StaticRedKoopaShellState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="VerticalFlyingKoopaState .cs">VerticalFlyingKoopaState .cs</ProjectItem>
+        </Folder>
+        <Folder Name="Projectiles" TargetFolderName="Projectiles">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BowserFireball.cs">BowserFireball.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="InactiveBowserFireballState.cs">InactiveBowserFireballState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IProjectile.cs">IProjectile.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IProjectileState.cs">IProjectileState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingBowserFireballState.cs">LeftMovingBowserFireballState.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Factory" TargetFolderName="Factory">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BigMarioSpriteFactory.cs">BigMarioSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlockSpriteFactory.cs">BlockSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EndObjectSpriteFactory.cs">EndObjectSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnemySpriteFactory.cs">EnemySpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FireballSpriteFactory.cs">FireballSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FireMarioSpriteFactory.cs">FireMarioSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GreenLinkSpriteFactory.cs">GreenLinkSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HazardSpriteFactory.cs">HazardSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemSpriteFactory.cs">ItemSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LinkTransitionSpriteFactory.cs">LinkTransitionSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MarioTransitionSpriteFactory.cs">MarioTransitionSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MusicFactory.cs">MusicFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PipeSpriteFactory.cs">PipeSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlatformSpriteFactory.cs">PlatformSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RedLinkSpriteFactory.cs">RedLinkSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScenerySpriteFactory.cs">ScenerySpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SmallMarioSpriteFactory.cs">SmallMarioSpriteFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SoundFactory.cs">SoundFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SpriteFontFactory.cs">SpriteFontFactory.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Flagpole" TargetFolderName="Flagpole">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Flag.cs">Flag.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Flagpole.cs">Flagpole.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Hazards" TargetFolderName="Hazards">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IHazard.cs">IHazard.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Lava.cs">Lava.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LavaTop.cs">LavaTop.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SpinnyFireball.cs">SpinnyFireball.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Icon.ico">Icon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IGameObject.cs">IGameObject.cs</ProjectItem>
+      <Folder Name="Items" TargetFolderName="Items">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Coin.cs">Coin.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FireFlower.cs">FireFlower.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GreenMushroom.cs">GreenMushroom.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Item.cs">Item.cs</ProjectItem>
+        <Folder Name="ItemStates" TargetFolderName="ItemStates">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IItemState.cs">IItemState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingGreenMushroomState .cs">LeftMovingGreenMushroomState .cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingRedMushroomState.cs">LeftMovingRedMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingGreenMushroomState.cs">RightMovingGreenMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingRedMushroomState.cs">RightMovingRedMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticCoinState.cs">StaticCoinState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticFireFlowerState.cs">StaticFireFlowerState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticGreenMushroomState.cs">StaticGreenMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticRedMushroomState.cs">StaticRedMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticSpinningCoinState.cs">StaticSpinningCoinState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StaticStarState.cs">StaticStarState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UnboxingFireFlowerState.cs">UnboxingFireFlowerState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UnboxingGreenMushroomState.cs">UnboxingGreenMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UnboxingRedMushroomState.cs">UnboxingRedMushroomState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UnboxingSpinningCoinState.cs">UnboxingSpinningCoinState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UnboxingStarState.cs">UnboxingStarState.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RedMushroom.cs">RedMushroom.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SpinningCoin.cs">SpinningCoin.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Star.cs">Star.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Level" TargetFolderName="Level">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CSVLevelLoader.cs">CSVLevelLoader.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILevelLoader.cs">ILevelLoader.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Level.cs">Level.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MarioGameLevelLoader.cs">MarioGameLevelLoader.cs</ProjectItem>
+      </Folder>
+      <Folder Name="MarioGame" TargetFolderName="MarioGame">
+        <Folder Name="GameStates" TargetFolderName="GameStates">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AxeReachedState.cs">AxeReachedState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FlagpoleReachedState.cs">FlagpoleReachedState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GameOverState.cs">GameOverState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GameplayState.cs">GameplayState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GameStartState.cs">GameStartState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IGameState.cs">IGameState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LevelStartState.cs">LevelStartState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PausedState.cs">PausedState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PipeTransitionState.cs">PipeTransitionState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerDamagedOrPowerUpState.cs.cs">PlayerDamagedOrPowerUpState.cs.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerDyingState.cs">PlayerDyingState.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MarioGame.cs">MarioGame.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MarioGameHud.cs">MarioGameHud.cs</ProjectItem>
+        <Folder Name="Menu" TargetFolderName="Menu">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IMenuState.cs">IMenuState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MenuController.cs">MenuController.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="OptionsMenuState.cs">OptionsMenuState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayAsLinkMenuState.cs">PlayAsLinkMenuState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayAsMarioMenuState.cs">PlayAsMarioMenuState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StartGameMenuState.cs">StartGameMenuState.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Particle" TargetFolderName="Particle">
+        <Folder Name="Emitter" TargetFolderName="Emitter">
+          <ProjectItem ReplaceParameters="true" TargetFileName="PlayerStarEmitter.cs">PlayerStarEmitter.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SimpleEmitter.cs">SimpleEmitter.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticleEmitter.cs">IParticleEmitter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticleSystem.cs">IParticleSystem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Particle.cs">Particle.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StaticParticleSystem.cs">StaticParticleSystem.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Physics" TargetFolderName="Physics">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPhysicsObject.cs">IPhysicsObject.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PhysicsEngine.cs">PhysicsEngine.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Pipe" TargetFolderName="Pipe">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPipeState.cs">IPipeState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LeftPipeState.cs">LeftPipeState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Pipe.cs">Pipe.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PipeState.cs">PipeState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UpPipeState.cs">UpPipeState.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Platform" TargetFolderName="Platform">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPlatformState.cs">IPlatformState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MovingPlatformState.cs">MovingPlatformState.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Platform.cs">Platform.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Player" TargetFolderName="Player">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPlayer.cs">IPlayer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPlayerState.cs">IPlayerState.cs</ProjectItem>
+        <Folder Name="Link" TargetFolderName="Link">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Link.cs">Link.cs</ProjectItem>
+          <Folder Name="State Interfaces" TargetFolderName="State Interfaces">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IGreenLinkState.cs">IGreenLinkState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IRedLinkState.cs">IRedLinkState.cs</ProjectItem>
+          </Folder>
+          <Folder Name="States" TargetFolderName="States">
+            <ProjectItem ReplaceParameters="true" TargetFileName="DeadLinkState.cs">DeadLinkState.cs</ProjectItem>
+            <Folder Name="GreenLink" TargetFolderName="GreenLink">
+              <Folder Name="Attacks" TargetFolderName="Attacks">
+                <ProjectItem ReplaceParameters="true" TargetFileName="LeftSlashingGreenLinkState.cs">LeftSlashingGreenLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="LeftStabbingGreenLinkState.cs">LeftStabbingGreenLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="RightSlashingGreenLinkState.cs">RightSlashingGreenLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="RightStabbingGreenLinkState.cs">RightStabbingGreenLinkState.cs</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="DescendingGreenLinkState.cs">DescendingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftCrouchingGreenLinkState.cs">LeftCrouchingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftIdleGreenLinkState.cs">LeftIdleGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftJumpingGreenLinkState.cs">LeftJumpingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRunningGreenLinkState.cs">LeftRunningGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSprintingGreenLinkState.cs">LeftSprintingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightAutowalkingGreenLinkState.cs">RightAutowalkingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightCrouchingGreenLinkState.cs">RightCrouchingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightIdleGreenLinkState.cs">RightIdleGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightJumpingGreenLinkState.cs">RightJumpingGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRunningGreenLinkState.cs">RightRunningGreenLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSprintingGreenLinkState.cs">RightSprintingGreenLinkState.cs</ProjectItem>
+            </Folder>
+            <Folder Name="RedLink" TargetFolderName="RedLink">
+              <Folder Name="Attacks" TargetFolderName="Attacks">
+                <ProjectItem ReplaceParameters="true" TargetFileName="LeftSlashingRedLinkState.cs">LeftSlashingRedLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="LeftStabbingRedLinkState.cs">LeftStabbingRedLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="RightSlashingRedLinkState.cs">RightSlashingRedLinkState.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="RightStabbingRedLinkState.cs">RightStabbingRedLinkState.cs</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="DescendingRedLinkState.cs">DescendingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftCrouchingRedLinkState.cs">LeftCrouchingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftIdleRedLinkState.cs">LeftIdleRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftJumpingRedLinkState.cs">LeftJumpingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRunningRedLinkState.cs">LeftRunningRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSprintingRedLinkState.cs">LeftSprintingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightAutowalkingRedLinkState.cs">RightAutowalkingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightCrouchingRedLinkState.cs">RightCrouchingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightIdleRedLinkState.cs">RightIdleRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightJumpingRedLinkState.cs">RightJumpingRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRunningRedLinkState.cs">RightRunningRedLinkState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSprintingRedLinkState.cs">RightSprintingRedLinkState.cs</ProjectItem>
+            </Folder>
+            <Folder Name="TransitionStates" TargetFolderName="TransitionStates">
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftGreenToRedLinkTransitionState.cs">LeftGreenToRedLinkTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRedToGreenLinkTransitionState.cs">LeftRedToGreenLinkTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightGreenToRedLinkTransitionState.cs">RightGreenToRedLinkTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRedToGreenLinkTransitionState.cs">RightRedToGreenLinkTransitionState.cs</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="Mario" TargetFolderName="Mario">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Mario.cs">Mario.cs</ProjectItem>
+          <Folder Name="State Interfaces" TargetFolderName="State Interfaces">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IBigMarioState.cs">IBigMarioState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IFireMarioState.cs">IFireMarioState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ISmallMarioState.cs">ISmallMarioState.cs</ProjectItem>
+          </Folder>
+          <Folder Name="States" TargetFolderName="States">
+            <Folder Name="BigMario" TargetFolderName="BigMario">
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftCrouchingBigMarioState.cs">LeftCrouchingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftDescendingBigMarioState.cs">LeftDescendingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftIdleBigMarioState.cs">LeftIdleBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftJumpingBigMarioState.cs">LeftJumpingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRunningBigMarioState.cs">LeftRunningBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSlidingBigMarioState.cs">LeftSlidingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSprintingBigMarioState.cs">LeftSprintingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightAutowalkingBigMarioState.cs">RightAutowalkingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightCrouchingBigMarioState.cs">RightCrouchingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightDescendingBigMarioState.cs">RightDescendingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightIdleBigMarioState.cs">RightIdleBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightJumpingBigMarioState.cs">RightJumpingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRunningBigMarioState.cs">RightRunningBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSlidingBigMarioState.cs">RightSlidingBigMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSprintingBigMarioState.cs">RightSprintingBigMarioState.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DeadMarioState.cs">DeadMarioState.cs</ProjectItem>
+            <Folder Name="FireMario" TargetFolderName="FireMario">
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftCrouchingFireMarioState.cs">LeftCrouchingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftDescendingFireMarioState.cs">LeftDescendingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftIdleFireMarioState.cs">LeftIdleFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftJumpingFireMarioState.cs">LeftJumpingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRunningFireMarioState.cs">LeftRunningFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftShootingFireMarioState.cs">LeftShootingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSlidingFireMarioState.cs">LeftSlidingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSprintingFireMarioState.cs">LeftSprintingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightAutowalkingFireMarioState.cs">RightAutowalkingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightCrouchingFireMarioState.cs">RightCrouchingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightDescendingFireMarioState.cs">RightDescendingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightIdleFireMarioState.cs">RightIdleFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightJumpingFireMarioState.cs">RightJumpingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRunningFireMarioState.cs">RightRunningFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightShootingFireMario.cs">RightShootingFireMario.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSlidingFireMarioState.cs">RightSlidingFireMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSprintingFireMarioState.cs">RightSprintingFireMarioState.cs</ProjectItem>
+            </Folder>
+            <Folder Name="SmallMario" TargetFolderName="SmallMario">
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftDescendingSmallMarioState.cs">LeftDescendingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftIdleSmallMarioState.cs">LeftIdleSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftJumpingSmallMarioState.cs">LeftJumpingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftRunningSmallMarioState.cs">LeftRunningSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSlidingSmallMarioState.cs">LeftSlidingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSprintingSmallMarioState.cs">LeftSprintingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightAutowalkingSmallMarioState.cs">RightAutowalkingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightDescendingSmallMarioState.cs">RightDescendingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightIdleSmallMarioState.cs">RightIdleSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightJumpingSmallMarioState.cs">RightJumpingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightRunningSmallMarioState.cs">RightRunningSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSlidingSmallMarioState.cs">RightSlidingSmallMarioState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSprintingSmallMarioState.cs">RightSprintingSmallMarioState.cs</ProjectItem>
+            </Folder>
+            <Folder Name="TransitionStates" TargetFolderName="TransitionStates">
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftBigToFireMarioTransitionState.cs">LeftBigToFireMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftBigToSmallMarioTransitionState.cs">LeftBigToSmallMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftFireToSmallMarioTransitionState.cs">LeftFireToSmallMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSmallToBigMarioTransitionState.cs">LeftSmallToBigMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="LeftSmallToFireMarioTransitionState.cs">LeftSmallToFireMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightBigToFireMarioTransitionState.cs">RightBigToFireMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightBigToSmallMarioTransitionState.cs">RightBigToSmallMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightFireToSmallMarioTransitionState.cs">RightFireToSmallMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSmallToBigMarioTransitionState.cs">RightSmallToBigMarioTransitionState.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="RightSmallToFireMarioTransitionState.cs">RightSmallToFireMarioTransitionState.cs</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StarPlayer.cs">StarPlayer.cs</ProjectItem>
+        <Folder Name="Weapons" TargetFolderName="Weapons">
+          <Folder Name="Fireball" TargetFolderName="Fireball">
+            <ProjectItem ReplaceParameters="true" TargetFileName="DestroyedFireballState.cs">DestroyedFireballState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Fireball.cs">Fireball.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="InactiveFireballState.cs">InactiveFireballState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LeftMovingActiveFireballState.cs">LeftMovingActiveFireballState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RightMovingActiveFireballState.cs">RightMovingActiveFireballState.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IActiveWeaponState.cs">IActiveWeaponState.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IWeapon.cs">IWeapon.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IWeaponState.cs">IWeaponState.cs</ProjectItem>
+          <Folder Name="Sword" TargetFolderName="Sword">
+            <ProjectItem ReplaceParameters="true" TargetFileName="InactiveSwordState.cs">InactiveSwordState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LeftCrouchingSwordState.cs">LeftCrouchingSwordState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LeftStandingSwordState.cs">LeftStandingSwordState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RightCrouchingSwordState.cs">RightCrouchingSwordState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RightStandingSwordState.cs">RightStandingSwordState.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Sword.cs">Sword.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="SceneryObjects" TargetFolderName="SceneryObjects">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BigHill.cs">BigHill.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DoubleBush.cs">DoubleBush.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DoubleCloud.cs">DoubleCloud.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IScenery.cs">IScenery.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Scenery.cs">Scenery.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SingleBush.cs">SingleBush.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SingleCloud.cs">SingleCloud.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SmallHill.cs">SmallHill.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StaticScenery.cs">StaticScenery.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TitleBlock.cs">TitleBlock.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TripleBush.cs">TripleBush.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TripleCloud.cs">TripleCloud.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Sprite" TargetFolderName="Sprite">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimatedSprite.cs">AnimatedSprite.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Animation.cs">Animation.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimationPlayer.cs">AnimationPlayer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StaticSprite.cs">StaticSprite.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
